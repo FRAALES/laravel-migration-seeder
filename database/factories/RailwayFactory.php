@@ -17,16 +17,15 @@ class RailwayFactory extends Factory
     public function definition()
     {
         return [
-            'azienda' => fake() -> words(),
+            'azienda' => fake() -> sentence(),
             'stazione_di_partenza' => fake() -> city(),
             'stazione_di_arrivo' => fake() -> city(),
-            'orario_di_partenza' => fake() -> dateTime(),
-            'orario_di_arrivo' => fake() -> dateTime(),
+            'orario_di_partenza' => fake() -> datetime(),
+            'orario_di_arrivo' => fake() -> datetime(),
             'codice_treno' => fake() -> bothify('??-#####'),
             'numero_carrozze' => fake() -> randomDigit(),
             'in_orario' => fake() -> boolean(),
             'cancellato' => fake() -> boolean()
-
         ];
     }
 }
