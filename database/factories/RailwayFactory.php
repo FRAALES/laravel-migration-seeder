@@ -25,7 +25,7 @@ class RailwayFactory extends Factory
             'codice_treno' => fake() -> bothify('??-#####'),
             'numero_carrozze' => fake() -> randomDigit(),
             'in_orario' => fake() -> boolean(),
-            'cancellato' => fake() -> boolean(),
+            'cancellato' => fake() -> boolean()
 
         ];
     }
